@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Css Variables</title>
+    <style class="A">
+        :root{
+             --color: blue; /*global variable */
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div > ul{
+            display: flex;
+            background-color: aqua;
+            color:rgb(190, 29, 29);
+        }
+        ul li{
+            color: var(--color,blue /*this 2nd blue is alternative when no color variable found*/);
+            list-style: none;
+            padding:10px;
+            opacity: 0.5 ;
+        }
+        div{
+            background-color: teal;
+            color:mediumslateblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore velit temporibus!
+    </div>
+</body>
+</html>
