@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+          }
+        .card{
+            border:2px solid red;
+            
+        }
+
+        .card :nth-child(2){
+            background-color: red;
+        }
+        div :nth-child(4){
+            background-color: aqua;
+            color:yellow;
+            clear:right; 
+            /* to make element not to float in  */
+        }
+        img {
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://fastly.picsum.photos/id/938/536/354.jpg?hmac=ufMTbCaNf9Rf4uVZYpEfRq65GzzqoK-fR5rGByKH1yk">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo voluptas quos natus soluta doloremque. Illo voluptates dolores eaque corporis molestias vitae incidunt! Beatae perferendis repudiandae vero sint. Voluptate possimus quas fugit corporis, obcaecati doloremque nam deserunt cumque dignissimos quaerat amet voluptatum!</p>
+        <div class="card">Card 1</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cupiditate laborum, rem at laboriosam dignissimos impedit. Maxime eveniet commodi est inventore nulla voluptate sit voluptatem repudiandae provident vel veritatis ratione doloribus temporibus ducimus perspiciatis praesentium, nobis, rem eum modi libero! Maiores, commodi. Cum architecto necessitatibus atque blanditiis corporis quis officia facilis fuga dolores adipisci, aliquam quo saepe minima a? Similique fugiat, veritatis fugit, tempora eius voluptate quibusdam nam ipsa dicta sed tempore natus placeat laborum debitis, deserunt aliquam fuga asperiores eum adipisci. Dolore accusamus a, ipsa, fugiat quaerat modi officia voluptates voluptate veniam dignissimos quis odit maiores tempore enim consectetur tenetur, expedita dolor non labore dolorem. Maxime mollitia dolores magnam, fugiat fuga sed provident maiores non, suscipit neque dolor expedita quasi laborum nobis est, eum totam ducimus accusantium delectus iure veniam!</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>
